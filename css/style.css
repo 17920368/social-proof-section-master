@@ -1,0 +1,81 @@
+/*
+Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%)
+Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White: hsl(0, 0%, 100%)
+- Family: [Spartan](https://fonts.google.com/specimen/Spartan)
+- Weights: 400, 500, 700
+- Family: [Spartan](https://fonts.google.com/specimen/Spartan)
+- Weights: 400, 500, 700
+*/
+:root {
+  --veryDarkMagenta: hsl(300, 43%, 22%);
+  --softPink: hsl(333, 80%, 67%);
+  --darkMagenta: hsl(303, 10%, 53%);
+  --lightMagenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+.textAlign {
+  text-align: center;
+}
+html,
+body {
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+body {
+  height: 100%;
+}
+/**Main container**/
+.socialCard {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+/*Card Header*/
+.socialCard-header-h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.socialCard-header-p {
+  color: var(--darkMagenta);
+}
+/*Card body*/
+.socialCard-body {
+  font-size: small;
+}
+/*Rated*/
+.socialCard-body-rated {
+  background-color: var(--lightMagenta);
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 1rem;
+}
+.stars {
+  padding-top: 1rem;
+}
+.rated-description {
+  padding-bottom: 0.5rem;
+  color: var(--veryDarkMagenta);
+  font-weight: bolder;
+}
+/*User opinion*/
+.socialCard-body-userOpinion {
+  background-color: var(--veryDarkMagenta);
+  border-radius: 0.8rem;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.userOpinion-header {
+  display: flex;
+  flex-direction: row;
+}
+.userOpinion-img {
+  border-radius: 50%;
+  width: 20%;
+  height: 5%;
+}
