@@ -106,3 +106,46 @@ body {
   margin-top: 2rem;
   padding-bottom: 2rem;
 }
+
+/*Desktop sytle*/
+@media screen and (min-width: 1024px) {
+  .textAlign {
+    text-align: left;
+  }
+  /**Main container**/
+  .socialCard {
+    flex-direction: row;
+    width: 80%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+  }
+  .socialCard-body-rated {
+    background-color: var(--lightMagenta);
+    width: 70%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
+  .stars {
+    display: flex;
+    flex-direction: row;
+  }
+  .five-start {
+    width: 15%;
+    height: 2vh;
+    margin-left: 5%;
+  }
+  .five-start:first-of-type {
+    margin-left: 1rem;
+  }
+  .five-start:last-of-type {
+    margin-right: 3rem;
+  }
+  .rated-description {
+    line-height: 2rem;
+    font-weight: bold;
+  }
+}
