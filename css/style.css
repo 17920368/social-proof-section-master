@@ -25,7 +25,7 @@ body {
   font-family: "Spartan", sans-serif;
 }
 body {
-  height: 100%;
+  height: 100vh;
 }
 /**Main container**/
 .socialCard {
@@ -112,15 +112,25 @@ body {
   .textAlign {
     text-align: left;
   }
+  /*Title*/
+  .socialCard-header-h2 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom: 0;
+  }
+  .socialCard-header-p {
+    margin-top: 1rem;
+  }
   /**Main container**/
   .socialCard {
     flex-direction: row;
-    width: 80%;
+    width: 70%;
     height: 100vh;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10vh;
   }
+  /*Body rated*/
   .socialCard-body-rated {
     background-color: var(--lightMagenta);
     width: 70%;
@@ -128,6 +138,14 @@ body {
     display: flex;
     flex-direction: row;
     margin-bottom: 1rem;
+    margin-right: 10%;
+  }
+  .socialCard-body-rated:first-of-type {
+    margin-top: 10%;
+    margin-left: 15%;
+  }
+  .socialCard-body-rated:last-of-type {
+    margin-left: 25%;
   }
   .stars {
     display: flex;
@@ -145,7 +163,26 @@ body {
     margin-right: 3rem;
   }
   .rated-description {
-    line-height: 2rem;
+    line-height: 1.5em;
     font-weight: bold;
+  }
+  /*User opinion*/
+  .socialCard-MainBody {
+    display: flex;
+    position: relative;
+    margin-left: -38%;
+    margin-top: 20%;
+  }
+  .socialCard-body-userOpinion {
+    width: 70%;
+    height: 30vh;
+  }
+  .irene {
+    margin-left: 5%;
+    margin-top: 2%;
+  }
+  .socialCard-body-userOpinion:last-of-type {
+    margin-left: 5%;
+    margin-top: 5%;
   }
 }
